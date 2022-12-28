@@ -1,0 +1,97 @@
+
+Git commands
+Version
+Config —global user.name/user.email “” user@mailid
+Init
+Status
+Add . 
+Add filename
+Commit -m “msg”
+Diff
+Log
+Reset
+Branch branchname
+Checkout -b branchname 
+Branch -d branchname
+Merge
+Remote add origin address
+Push origin master/main
+Clone remote url
+Pull branch name remote url
+
+Maven
+Eclipse new maven proj
+Org.apache.maven.archetypes
+App.java run as maven clean, maven install, maven build
+Run project as java application 
+Create new repo put maven in gitignore
+Git clone 
+Copy paste from eclipse workspace
+Git add .
+Git commit
+Gir push origin master
+
+Jenkins
+Set env var path w bin, maven home java home
+Configure jenkins add jdk maven git, command shell
+New item, new freestyle proj
+Source code management put git url and specify branch
+Build - invoke top lvl maven targets clean install 
+Post build - archive all artifacts **/* 
+Build other projects 
+New freestyle proj discard old builds
+Copy artifacts from other proj , stable build only **/*
+Invoke top lvl maven target - test
+Archive all artifacts
+New view build pipeline
+
+Maven jenkin web app
+Webapp archetype
+Pom.xml add dependency (
+Gid javax.servlet
+Aid servlet-api
+Version 2.5 )
+Clean install build
+Project run as run on server
+Same jenkins
+Build proj
+post build - deploy war/ear to a container, **/*.war
+Tomcat ver, user pwd, url
+Tomcat localhost manager app click on webapp proj
+
+Docker
+Windows features
+Version
+Run hello-world
+Pull ubuntu
+Images
+Ps -a
+Log container id
+Stop container id
+Exec -it container id bash
+Kill container id
+Search ubuntu
+Run -it imageid /bin/bash
+
+Dockerfile
+FROM alpine
+RUN apk add —update redis
+CMD[“redis-server”]
+Docker build -t imgname:ver
+Login
+Tag imgname:ver dockerid/ver
+Push dockerid/ver
+Pull dockerid/ver:latest
+
+Kubernetes minikube kubectl
+Enable kubernetes docker desktop
+Minikube start
+Minikube ip
+Kubectl get po -A
+Kubectl create deployment hello-minikube —image=k8s.gcr.io/echoserver:1.4
+Kubectl expose deployment hello-minikube —type=NodePort —port=8000
+Kubectl port-forward service/hello-minikube new:old
+
+Kubectl apply -f config.yaml
+Kubectl get services
+Webapp-service open on port
